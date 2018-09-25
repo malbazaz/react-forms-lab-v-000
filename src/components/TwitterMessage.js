@@ -13,13 +13,15 @@ class TwitterMessage extends React.Component {
         value: event.target.value
       })
     }
-  
+
 
   render() {
     return (
       <div>
         <strong>Your message:</strong>
-        <input type="text" />
+        <form onSubmit={event => this.handleSubmit(event)}
+        <input type="text" value={this.state.value} onChange={this.handleChange}/>
+        </form>
       </div>
     );
   }
