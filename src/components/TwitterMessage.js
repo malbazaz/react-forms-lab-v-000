@@ -1,7 +1,7 @@
 import React from "react";
 
 class TwitterMessage extends React.Component {
-  constructor() {
+  constructor(maxChars) {
     super();
 
     this.state = {};
